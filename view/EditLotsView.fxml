@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.stock.view.EditLotsViewController">
+<children>
+	<Label layoutX="194.0" layoutY="43.0" text="Edit Article Lots">
+		<font>
+			<Font size="24.0" />
+		</font>
+	</Label>
+	<Button fx:id="addButton" layoutX="120.0" layoutY="322.0" mnemonicParsing="false" text="Add" />
+	<Button fx:id="deleteButton" layoutX="220.0" layoutY="322.0" mnemonicParsing="false" text="Delete" />
+	<Button fx:id="saveButton" layoutX="320.0" layoutY="322.0" mnemonicParsing="false" text="Save and Quit" />
+	<Button fx:id="quitButton" layoutX="450.0" layoutY="322.0" mnemonicParsing="false" text="Quit" />
+	<TableView fx:id="lotsTableView" layoutX="120.0" layoutY="100.0" prefHeight="200.0" prefWidth="400.0" editable="true"/>
+</children>
+</AnchorPane>
+<!--<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="194.0" layoutY="43.0" text="Edit Article Quantity">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="editOkButton" layoutX="251.0" layoutY="322.0" mnemonicParsing="false" text="OK" />
+      <TableView layoutX="106.0" layoutY="100.0" prefHeight="200.0" prefWidth="389.0">
+        <columns>
+          <TableColumn fx:id="ingredientListView" editable="false" prefWidth="75.0" text="Ingredient" />
+          <TableColumn fx:id="quantityView" editable="false" prefWidth="75.0" text="Quantity" />
+            <TableColumn fx:id="dateView" editable="false" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="utilityView" editable="false" prefWidth="75.0" text="Utility" />
+            <TableColumn fx:id="newQuantity" prefWidth="88.0" text="New Quantity" />
+        </columns>
+      </TableView>
+      <Button fx:id="deleteArticleButton" layoutX="329.0" layoutY="322.0" mnemonicParsing="false" text="Delete" />
+   </children>
+</AnchorPane>-->

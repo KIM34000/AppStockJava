@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="467.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.stock.view.ListViewController">
+<children>
+	<Label layoutX="52.0" layoutY="61.0" text="List of current ingredients" textFill="#032cf8">
+		<font>
+			<Font size="18.0" />
+		</font>
+	</Label>
+	<Label layoutX="393.0" layoutY="61.0" text="List of current utilities" textFill="#032cf8">
+		<font>
+			<Font size="18.0" />
+		</font>
+	</Label>
+	<VBox layoutX="10.0" layoutY="107.0" prefHeight="200.0" prefWidth="300.0">
+		<children>
+			<ListView fx:id="ingredientsListView" prefHeight="200.0" prefWidth="200.0" />
+		</children>
+	</VBox>
+	<VBox layoutX="330.0" layoutY="107.0" prefHeight="200.0" prefWidth="300.0">
+		<children>
+			<ListView fx:id="utilitiesListView" prefHeight="200.0" prefWidth="200.0" />
+		</children>
+	</VBox>
+	<Button fx:id="showOrdersListViewButton" layoutX="61.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #032cf8;" text="Orders" textFill="#fcfafa" />
+	<Button fx:id="showSuppliersListViewButton" layoutX="194.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #032cf8;" text="Suppliers" textFill="#fcfafa" />
+	<Button fx:id="logOut" layoutX="551.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: lightblue;" text="Log out" />
+	<Button fx:id="editIngredientLotsButton" layoutX="11.0" layoutY="317.0" mnemonicParsing="false" style="-fx-background-color: #032cf8;" text="Edit Ingredient lots..." textFill="#fcfafa" />
+	<Button fx:id="editUtilityLotsButton" layoutX="330.0" layoutY="317.0" mnemonicParsing="false" style="-fx-background-color: #032cf8;" text="Edit utility lots..." textFill="#fcfafa" />
+	<Button fx:id="deleteIngredientLotsButton" layoutX="259.0" layoutY="317.0" mnemonicParsing="false" style="-fx-background-color: #032cf8;" text="Delete" textFill="#fcfafa" />
+	<Button fx:id="deleteUtilityLotsButton" layoutX="579.0" layoutY="317.0" mnemonicParsing="false" style="-fx-background-color: #032cf8;" text="Delete" textFill="#fcfafa" />
+	<Button fx:id="changePasswordButton" layoutX="352.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: lightblue;" text="Change Password" />
+</children>
+</AnchorPane>
